@@ -304,7 +304,8 @@ for this_repo in input_config['repos']:
         ci_bad_binary.append(bbinary)
         this_spkg_list[sourcename]['bad_installs'][binarynvr] = bbinary
         print("    Wont Install: " + binarynvr)
-
+        if len(ci_bad_binary) >= 1:
+          break
     print("      Failed Installs: " + str(len(ci_bad_binary)))
     this_overall["ci_bnumber_good"] = this_overall["bnumber"] - len(ci_bad_binary)
     this_overall["ci_bnumber_bad"] = len(ci_bad_binary)
@@ -354,6 +355,10 @@ for this_repo in input_config['repos']:
                   this_source['binaries'] = old_core_repo["spkg_list"][sourcename]['binaries']
                   this_source['bad_installs'][binarynvr] = bbinary
                   core_spkg_list[sourcename] = this_source
+              if len(ci_core_bad_binary) >= 1:
+                break
+          if len(ci_core_bad_binary) >= 1:
+            break
 
       print("      Failed Core Installs: " + str(len(ci_core_bad_binary)))
       this_overall["core"] = core_spkg_list
@@ -452,6 +457,8 @@ for this_repo in input_config['repos']:
           test_ci_bad_binary.append(bbinary)
           test_this_spkg_list[sourcename]['bad_installs'][binarynvr] = bbinary
           print("    Wont Install: " + binarynvr)
+          if len(test_ci_bad_binary) >= 1:
+            break
           
       print("      Failed Installs: " + str(len(test_ci_bad_binary)))
       this_overall["test_ci_bnumber_good"] = this_overall["test_bnumber"] - len(test_ci_bad_binary)
