@@ -103,7 +103,10 @@ for this_repo in input_config['repos']:
   #print('OtherRepos: ' + str(this_repo['OtherRepos']))
   print("")
   print("Working On: " + this_repo['RepoName'])
-  if this_repo['RepoName']=="epel9-next" or this_repo['RepoName']=="epel9":
+  this_overall = {}
+  if this_repo['RepoName']=="epel10":
+    version = "epel10"
+  elif this_repo['RepoName']=="epel9-next" or this_repo['RepoName']=="epel9":
     version = "epel9"
   elif this_repo['RepoName']=="epel8-next" or this_repo['RepoName']=="epel8":
     version = "epel8"
@@ -123,7 +126,6 @@ for this_repo in input_config['repos']:
         old_core_repo = json.load(jsonfile)
   except IOError:
     old_core_repo = {}
-  this_overall = {}
   this_spkg_list = {}
   core_spkg_list = {}
   this_bugz_no_source = []
