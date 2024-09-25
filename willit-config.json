@@ -1,6 +1,26 @@
 {"repos":
   [
     {
+      "RepoName": "epel10",
+      "RepoURL": "https://dl.fedoraproject.org/pub/epel/10/Everything/x86_64/os/",
+      "IsNext": "False",
+      "CheckBugz": "False",
+      "CheckTest": "False",
+      "CheckInstall": "True",
+      "CheckBuild": "False",
+      "CheckDuplicates": "False",
+      "TestRepoURL": "https://dl.fedoraproject.org/pub/epel/testing/10/Everything/x86_64/",
+      "OtherRepos":
+        [
+          {"OtherRepoName": "appstream",
+            "OtherRepoURL": "https://composes.stream.centos.org/stream-10/production/latest-CentOS-Stream/compose/AppStream/x86_64/os/"},
+          {"OtherRepoName": "baseos",
+            "OtherRepoURL": "https://composes.stream.centos.org/stream-10/production/latest-CentOS-Stream/compose/BaseOS/x86_64/os/"},
+          {"OtherRepoName": "crb",
+            "OtherRepoURL": "https://composes.stream.centos.org/stream-10/production/latest-CentOS-Stream/compose/CRB/x86_64/os/"}
+        ]
+    },
+    {
       "RepoName": "epel9",
       "RepoURL": "https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/",
       "IsNext": "False",
@@ -10,14 +30,14 @@
       "CheckBuild": "False",
       "CheckDuplicates": "True",
       "TestRepoURL": "https://dl.fedoraproject.org/pub/epel/testing/9/Everything/x86_64/",
-      "OtherRepos": 
+      "OtherRepos":
         [
-          {"OtherRepoName": "appstream", 
+          {"OtherRepoName": "appstream",
             "OtherRepoURL": "https://repo.almalinux.org/almalinux/9/AppStream/x86_64/os/"},
-          {"OtherRepoName": "baseos", 
+          {"OtherRepoName": "baseos",
             "OtherRepoURL": "https://repo.almalinux.org/almalinux/9/BaseOS/x86_64/os/"},
-          {"OtherRepoName": "crb", 
-            "OtherRepoURL": "https://repo.almalinux.org/almalinux/9/CRB/x86_64/os/"}          
+          {"OtherRepoName": "crb",
+            "OtherRepoURL": "https://repo.almalinux.org/almalinux/9/CRB/x86_64/os/"}
         ]
     },
     {
