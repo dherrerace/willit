@@ -41,29 +41,6 @@
         ]
     },
     {
-      "RepoName": "epel9-next",
-      "RepoURL": "https://dl.fedoraproject.org/pub/epel/next/9/Everything/x86_64/",
-      "CoreRepoURL": "https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/",
-      "IsNext": "True",
-      "CheckBugz": "False",
-      "CheckTest": "True",
-      "CheckInstall": "True",
-      "CheckBuild": "False",
-      "CheckDuplicates": "False",
-      "TestRepoURL": "https://dl.fedoraproject.org/pub/epel/testing/next/9/Everything/x86_64/",
-      "OtherRepos": 
-        [
-          {"OtherRepoName": "epel9", 
-            "OtherRepoURL": "https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/"},
-          {"OtherRepoName": "appstream", 
-            "OtherRepoURL": "https://composes.stream.centos.org/production/latest-CentOS-Stream/compose/AppStream/x86_64/os/"},
-          {"OtherRepoName": "baseos", 
-            "OtherRepoURL": "https://composes.stream.centos.org/production/latest-CentOS-Stream/compose/BaseOS/x86_64/os/"},
-          {"OtherRepoName": "crb", 
-            "OtherRepoURL": "https://composes.stream.centos.org/production/latest-CentOS-Stream/compose/CRB/x86_64/os/"}          
-        ]
-    },
-    {
       "RepoName": "epel8",
       "RepoURL": "https://dl.fedoraproject.org/pub/epel/8/Everything/x86_64/",
       "IsNext": "False",
