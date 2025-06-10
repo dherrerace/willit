@@ -106,6 +106,8 @@ for this_repo in input_config['repos']:
   this_overall = {}
   if this_repo['RepoName']=="epel10":
     version = "epel10"
+  elif this_repo['RepoName']=="epel10z":
+    version = "epel10z"
   elif this_repo['RepoName']=="epel9-next" or this_repo['RepoName']=="epel9":
     version = "epel9"
   elif this_repo['RepoName']=="epel8-next" or this_repo['RepoName']=="epel8":
