@@ -4,11 +4,11 @@
       "RepoName": "epel10",
       "RepoURL": "https://dl.fedoraproject.org/pub/epel/10/Everything/x86_64/",
       "IsNext": "False",
-      "CheckBugz": "False",
-      "CheckTest": "False",
+      "CheckBugz": "True",
+      "CheckTest": "True",
       "CheckInstall": "True",
       "CheckBuild": "False",
-      "CheckDuplicates": "False",
+      "CheckDuplicates": "True",
       "TestRepoURL": "https://dl.fedoraproject.org/pub/epel/testing/10/Everything/x86_64/",
       "OtherRepos":
         [
